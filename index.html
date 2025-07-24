@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraPlay TV - A Melhor Experiência IPTV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated background particles -->
+    <div class="particles-container">
+        <canvas id="particles"></canvas>
+    </div>
+
+    <header class="header-blur">
+        <nav class="container">
+            <a href="#" class="logo animate-on-scroll">
+                <div class="logo-icon"></div>
+                <span class="logo-text">UltraPlay TV</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features" class="nav-link">Recursos</a></li>
+                <li><a href="#plans" class="nav-link">Planos</a></li>
+                <li><a href="#devices" class="nav-link">Dispositivos</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+            </ul>
+            <a href="#plans" class="btn btn-primary pulse-animation">Assine Agora</a>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content container">
+                <div class="hero-badge animate-on-scroll">
+                    <span class="badge-text">🚀 Nova Era do Entretenimento</span>
+                </div>
+                <h1 class="hero-title animate-on-scroll">
+                    A Revolução da <span class="gradient-text">TV</span> Chegou.
+                </h1>
+                <p class="hero-description animate-on-scroll">Tenha acesso a milhares de canais, filmes e séries em qualquer dispositivo, com a máxima qualidade de imagem e som.</p>
+                <div class="hero-buttons animate-on-scroll">
+                    <a href="#plans" class="btn btn-primary btn-large glow-effect">
+                        <span>Ver Planos</span>
+                        <div class="btn-particles"></div>
+                    </a>
+       
+                </div>
+                <div class="hero-stats animate-on-scroll">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="10000">0</div>
+                        <div class="stat-label">Canais</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="50000">0</div>
+                        <div class="stat-label">Filmes & Séries</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">% Uptime</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-devices">
+                    <div class="device-float tv-device"></div>
+                    <div class="device-float phone-device"></div>
+                    <div class="device-float tablet-device"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Por que escolher a <span class="gradient-text">UltraPlay TV</span>?</h2>
+                <p class="section-subtitle">Tecnologia de ponta para uma experiência única</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card glass-effect animate-on-scroll" data-tilt>
+                    <div class="feature-icon channels-icon"></div>
+                    <h3>+10.000 Canais</h3>
+                    <p>Uma grade completa com canais de esporte, notícias, entretenimento e muito mais, ao vivo.</p>
+                    <div class="feature-overlay"></div>
+                </div>
+                <div class="feature-card glass-effect animate-on-scroll" data-tilt>
+                    <div class="feature-icon vod-icon"></div>
+                    <h3>Filmes e Séries On Demand</h3>
+                    <p>Assista aos últimos lançamentos e suas séries favoritas quando e onde quiser.</p>
+                    <div class="feature-overlay"></div>
+                </div>
+                <div class="feature-card glass-effect animate-on-scroll" data-tilt>
+                    <div class="feature-icon quality-icon"></div>
+                    <h3>Qualidade HD e 4K</h3>
+                    <p>Experimente uma transmissão estável e com a mais alta definição de imagem disponível.</p>
+                    <div class="feature-overlay"></div>
+                </div>
+                <div class="feature-card glass-effect animate-on-scroll" data-tilt>
+                    <div class="feature-icon devices-icon"></div>
+                    <h3>Multi-dispositivos</h3>
+                    <p>Compatível com Smart TV, TV Box, Celular, Tablet e Computador.</p>
+                    <div class="feature-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2>O que nossos <span class="gradient-text">clientes</span> dizem</h2>
+                    <p class="section-subtitle">Milhares de famílias já escolheram a UltraPlay TV</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card glass-effect animate-on-scroll" data-tilt>
+                        <div class="testimonial-content">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p>"Incrível! Cancelei minha TV a cabo e não me arrependo nem um pouco. A qualidade é excelente e tenho acesso a muito mais conteúdo por um preço muito melhor."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MC</div>
+                            <div class="author-info">
+                                <span class="author-name">Maria Clara</span>
+                                <span class="author-location">São Paulo, SP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card glass-effect animate-on-scroll" data-tilt>
+                        <div class="testimonial-content">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p>"O suporte é fantástico! Tive um problema na configuração e em 5 minutos estava tudo funcionando. Recomendo muito!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">RF</div>
+                            <div class="author-info">
+                                <span class="author-name">Roberto Fernandes</span>
+                                <span class="author-location">Rio de Janeiro, RJ</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card glass-effect animate-on-scroll" data-tilt>
+                        <div class="testimonial-content">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p>"Assisto em qualquer lugar! No trabalho, em casa, no celular... A praticidade é incrível e a imagem sempre perfeita."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">AS</div>
+                            <div class="author-info">
+                                <span class="author-name">Ana Silva</span>
+                                <span class="author-location">Belo Horizonte, MG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card glass-effect animate-on-scroll" data-tilt>
+                        <div class="testimonial-content">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p>"Minha família toda adora! Cada um assiste o que quer, quando quer. Os canais infantis são ótimos para as crianças."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">JS</div>
+                            <div class="author-info">
+                                <span class="author-name">João Santos</span>
+                                <span class="author-location">Curitiba, PR</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card glass-effect animate-on-scroll" data-tilt>
+                        <div class="testimonial-content">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p>"Nunca mais fico sem os jogos do meu time! Todos os canais de esporte em HD, é outro nível de experiência."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">LO</div>
+                            <div class="author-info">
+                                <span class="author-name">Lucas Oliveira</span>
+                                <span class="author-location">Porto Alegre, RS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card glass-effect animate-on-scroll" data-tilt>
+                        <div class="testimonial-content">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p>"Economia de mais de 150 reais por mês! E ainda tenho muito mais opções de filmes e séries. Melhor investimento que fiz!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">PM</div>
+                            <div class="author-info">
+                                <span class="author-name">Patricia Mendes</span>
+                                <span class="author-location">Salvador, BA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-stats animate-on-scroll">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="98">0</div>
+                        <div class="stat-label">% Satisfação</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="15000">0</div>
+                        <div class="stat-label">Clientes Ativos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="4.9">0</div>
+                        <div class="stat-label">Avaliação Média</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+<section id="plans" class="plans-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2>Planos que cabem no seu <span class="gradient-text">bolso</span></h2>
+                    <p class="section-subtitle">Escolha o plano perfeito para você</p>
+                </div>
+                <div class="plans-toggle animate-on-scroll">
+                    <button class="toggle-btn active" data-period="monthly">Mensal</button>
+                    <button class="toggle-btn" data-period="bimonthly">Bimestral</button>
+                    <button class="toggle-btn" data-period="quarterly">Trimestral</button>
+                    <button class="toggle-btn" data-period="semiannual">Semestral</button>
+                    <button class="toggle-btn" data-period="annual">Anual <span class="discount-badge">Melhor Oferta</span></button>
+                </div>
+                <div class="plans-grid">
+                    <div class="plan-card glass-effect animate-on-scroll" data-tilt>
+                        <div class="plan-header">
+                            <h3>Plano Básico</h3>
+                            <div class="price">
+                                <sup>R$</sup>
+                                <span class="amount monthly-price">35</span>
+                                <span class="amount bimonthly-price" style="display: none;">60</span>
+                                <span class="amount quarterly-price" style="display: none;">80</span>
+                                <span class="amount semiannual-price" style="display: none;">150</span>
+                                <span class="amount annual-price" style="display: none;">275</span>
+                                <span class="period monthly-period">/mês</span>
+                                <span class="period bimonthly-period" style="display: none;">/2 meses</span>
+                                <span class="period quarterly-period" style="display: none;">/3 meses</span>
+                                <span class="period semiannual-period" style="display: none;">/6 meses</span>
+                                <span class="period annual-period" style="display: none;">/ano</span>
+                            </div>
+                        </div>
+                        <ul class="plan-features">
+                            <li class="feature-included">Acesso a 1 Tela</li>
+                            <li class="feature-included">Qualidade SD e HD</li>
+                            <li class="feature-included">+10.000 Canais</li>
+                            <li class="feature-included">Filmes e Séries</li>
+                            <li class="feature-excluded">Conteúdo Adulto</li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/message/UQDMRETZEITZN1" target="_blank" class="btn btn-secondary plan-btn">
+                            <span>Assinar Plano Básico</span>
+                            <div class="btn-shimmer"></div>
+                        </a>
+                    </div>
+                    
+                    <div class="plan-card featured glass-effect animate-on-scroll" data-tilt>
+                        <div class="popular-badge">Mais Popular</div>
+                        <div class="plan-header">
+                            <h3>Plano Premium</h3>
+                            <div class="price">
+                                <sup>R$</sup>
+                                <span class="amount monthly-price">35</span>
+                                <span class="amount bimonthly-price" style="display: none;">60</span>
+                                <span class="amount quarterly-price" style="display: none;">80</span>
+                                <span class="amount semiannual-price" style="display: none;">150</span>
+                                <span class="amount annual-price" style="display: none;">275</span>
+                                <span class="period monthly-period">/mês</span>
+                                <span class="period bimonthly-period" style="display: none;">/2 meses</span>
+                                <span class="period quarterly-period" style="display: none;">/3 meses</span>
+                                <span class="period semiannual-period" style="display: none;">/6 meses</span>
+                                <span class="period annual-period" style="display: none;">/ano</span>
+                            </div>
+                        </div>
+                        <ul class="plan-features">
+                            <li class="feature-included">Acesso a 2 Telas</li>
+                            <li class="feature-included">Qualidade HD e 4K</li>
+                            <li class="feature-included">+10.000 Canais</li>
+                            <li class="feature-included">Filmes e Séries</li>
+                            <li class="feature-included">Conteúdo Adulto (Opcional)</li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/message/UQDMRETZEITZN1" target="_blank" class="btn btn-primary plan-btn glow-effect">
+                            <span>Assinar Plano Premium</span>
+                            <div class="btn-particles"></div>
+                        </a>
+                    </div>
+                    
+                    <div class="plan-card glass-effect animate-on-scroll" data-tilt>
+                        <div class="plan-header">
+                            <h3>Plano Família</h3>
+                            <div class="price">
+                                <sup>R$</sup>
+                                <span class="amount monthly-price">35</span>
+                                <span class="amount bimonthly-price" style="display: none;">60</span>
+                                <span class="amount quarterly-price" style="display: none;">80</span>
+                                <span class="amount semiannual-price" style="display: none;">150</span>
+                                <span class="amount annual-price" style="display: none;">275</span>
+                                <span class="period monthly-period">/mês</span>
+                                <span class="period bimonthly-period" style="display: none;">/2 meses</span>
+                                <span class="period quarterly-period" style="display: none;">/3 meses</span>
+                                <span class="period semiannual-period" style="display: none;">/6 meses</span>
+                                <span class="period annual-period" style="display: none;">/ano</span>
+                            </div>
+                        </div>
+                        <ul class="plan-features">
+                            <li class="feature-included">Acesso a 4 Telas</li>
+                            <li class="feature-included">Qualidade HD e 4K</li>
+                            <li class="feature-included">+10.000 Canais</li>
+                            <li class="feature-included">Filmes e Séries</li>
+                            <li class="feature-included">Conteúdo Adulto (Opcional)</li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/message/UQDMRETZEITZN1" target="_blank" class="btn btn-secondary plan-btn">
+                            <span>Assinar Plano Família</span>
+                            <div class="btn-shimmer"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="devices" class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Assista onde <span class="gradient-text">quiser</span></h2>
+                <p class="section-subtitle">Nossa plataforma é compatível com os principais dispositivos do mercado</p>
+            </div>
+            <div class="devices-grid">
+                <div class="device-item glass-effect animate-on-scroll" data-device="tv">
+                    <div class="device-icon tv-icon"></div>
+                    <span class="device-name">Smart TV</span>
+                    <div class="device-overlay"></div>
+                </div>
+                <div class="device-item glass-effect animate-on-scroll" data-device="box">
+                    <div class="device-icon box-icon"></div>
+                    <span class="device-name">TV Box</span>
+                    <div class="device-overlay"></div>
+                </div>
+                <div class="device-item glass-effect animate-on-scroll" data-device="phone">
+                    <div class="device-icon phone-icon"></div>
+                    <span class="device-name">Smartphone</span>
+                    <div class="device-overlay"></div>
+                </div>
+                <div class="device-item glass-effect animate-on-scroll" data-device="pc">
+                    <div class="device-icon pc-icon"></div>
+                    <span class="device-name">Computador</span>
+                    <div class="device-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Perguntas <span class="gradient-text">Frequentes</span></h2>
+                <p class="section-subtitle">Tire todas as suas dúvidas</p>
+            </div>
+            <div class="faq-accordion">
+                <div class="faq-item glass-effect animate-on-scroll">
+                    <button class="faq-question">
+                        <span>O que é IPTV?</span>
+                        <div class="faq-icon">+</div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>IPTV (Internet Protocol Television) é uma tecnologia que permite a transmissão de sinais de televisão através da internet, oferecendo uma alternativa flexível à TV a cabo ou via satélite tradicional.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-effect animate-on-scroll">
+                    <button class="faq-question">
+                        <span>Preciso de algum equipamento especial?</span>
+                        <div class="faq-icon">+</div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Não! Você pode assistir em dispositivos que já possui, como Smart TVs, smartphones, tablets, computadores ou TV Boxes (como Fire Stick, Mi Box, etc). Basta ter uma conexão de internet estável.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-effect animate-on-scroll">
+                    <button class="faq-question">
+                        <span>Qual a velocidade de internet recomendada?</span>
+                        <div class="faq-icon">+</div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Recomendamos uma conexão de pelo menos 10 Mbps para canais em HD e 25 Mbps para canais em 4K, garantindo uma experiência sem travamentos.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-effect animate-on-scroll">
+                    <button class="faq-question">
+                        <span>Posso testar antes de assinar?</span>
+                        <div class="faq-icon">+</div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Oferecemos um teste grátis para que você possa comprovar a qualidade do nosso serviço. Entre em contato para solicitar o seu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Demo Modal -->
+    <div id="demoModal" class="modal">
+        <div class="modal-content glass-effect">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h3>Demonstração UltraPlay TV</h3>
+            </div>
+            <div class="demo-video">
+                <div class="video-placeholder">
+                    <div class="play-button-large">▶</div>
+                    <p>Clique para ver nossa demonstração</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="glass-effect">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon"></div>
+                        <span class="logo-text">UltraPlay TV</span>
+                    </div>
+                    <p>A revolução do entretenimento digital.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Produto</h4>
+                        <a href="#features">Recursos</a>
+                        <a href="#plans">Planos</a>
+                        <a href="#devices">Dispositivos</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Suporte</h4>
+                        <a href="#faq">FAQ</a>
+                        <a href="#">Contato</a>
+                        <a href="#">Ajuda</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 UltraPlay TV. Todos os direitos reservados.</p>
+                <p class="disclaimer">A UltraPlay TV não armazena nenhum conteúdo em seus servidores. Todo o conteúdo é disponibilizado por terceiros.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
