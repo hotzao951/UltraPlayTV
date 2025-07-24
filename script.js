@@ -229,6 +229,11 @@ class FAQAccordion {
 // Plans Toggle
 class PlansToggle {
     constructor() {
+        this.baseMonthlyPrice = {
+            basic: 35,
+            premium: 35,
+            family: 40
+        };
         this.init();
     }
     
@@ -265,6 +270,57 @@ class PlansToggle {
         });
         document.querySelectorAll(`.${period}-period`).forEach(periodEl => {
             periodEl.style.display = 'inline';
+        });
+        
+        // Update price comparison
+        this.updatePriceComparison(period);
+    }
+    
+    updatePriceComparison(period) {
+        const priceMultipliers = {
+            monthly: { months: 1, basic: 35, premium: 35, family: 40 },
+            bimonthly: { months: 2, basic: 60, premium: 60, family: 70 },
+            quarterly: { months: 3, basic: 80, premium: 85, family: 100 },
+            semiannual: { months: 6, basic: 150, premium: 140, family: 160 },
+            annual: { months: 12, basic: 275, premium: 250, family: 280 }
+        };
+        
+        const currentPlan = priceMultipliers[period];
+        
+        // Update each plan card
+        document.querySelectorAll('.plan-card').forEach((card, index) => {
+            const planTypes = ['basic', 'premium', 'family'];
+            const planType = planTypes[index];
+            
+            if (!planType) return;
+            
+            const currentPrice = currentPlan[planType];
+            const monthlyEquivalent = currentPrice / currentPlan.months;
+            const baseMonthly = this.baseMonthlyPrice[planType];
+            const discount = period === 'monthly' ? 0 : Math.round((1 - monthlyEquivalent / baseMonthly) * 100);
+            
+            // Find or create price comparison element
+            let priceComparison = card.querySelector('.price-comparison');
+            if (!priceComparison) {
+                priceComparison = document.createElement('div');
+                priceComparison.className = 'price-comparison';
+                card.querySelector('.plan-header').appendChild(priceComparison);
+            }
+            
+            if (period === 'monthly') {
+                priceComparison.innerHTML = '';
+            } else {
+                priceComparison.innerHTML = `
+                    <div class="comparison-item">
+                        <span class="monthly-equivalent">R$ ${monthlyEquivalent.toFixed(2)}/mês</span>
+                        <span class="vs">vs</span>
+                        <span class="original-price">R$ ${baseMonthly}/mês</span>
+                    </div>
+                    <div class="discount-badge-large">
+                        ${discount}% OFF
+                    </div>
+                `;
+            }
         });
     }
 }

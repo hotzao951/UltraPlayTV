@@ -611,6 +611,67 @@ section {
     font-weight: 600;
 }
 
+.price-comparison {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.comparison-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.monthly-equivalent {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--success-color);
+    font-family: var(--font-mono);
+}
+
+.vs {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.original-price {
+    font-size: 1rem;
+    color: var(--text-muted);
+    text-decoration: line-through;
+    opacity: 0.8;
+}
+
+.discount-badge-large {
+    background: linear-gradient(135deg, var(--success-color) 0%, #00CC66 100%);
+    color: var(--background-color);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 700;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(0, 255, 136, 0.3);
+    animation: pulse-discount 2s infinite;
+}
+
+@keyframes pulse-discount {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 4px 15px rgba(0, 255, 136, 0.3);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(0, 255, 136, 0.5);
+    }
+}
+
 .plans-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -657,6 +718,7 @@ section {
 
 .plan-header {
     margin-bottom: 2rem;
+    position: relative;
 }
 
 .plan-card h3 {
@@ -1189,6 +1251,16 @@ footer {
     .testimonials-stats {
         flex-direction: column;
         gap: 2rem;
+    }
+    
+    .comparison-item {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    
+    .discount-badge-large {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
     }
 }
 
