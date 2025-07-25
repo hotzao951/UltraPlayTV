@@ -560,6 +560,254 @@ section {
     opacity: 1;
 }
 
+/* Price Comparison Section */
+.price-comparison-section {
+    background: radial-gradient(ellipse at center, rgba(0, 212, 255, 0.03) 0%, transparent 70%);
+    padding: 6rem 0;
+}
+
+.comparison-table {
+    background: var(--glass-background);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+.comparison-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr 1fr 1.5fr;
+    background: rgba(0, 212, 255, 0.1);
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid var(--glass-border);
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.comparison-header h4 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+    text-align: center;
+}
+
+.comparison-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr 1fr 1.5fr;
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all var(--animation-speed) ease;
+    align-items: center;
+}
+
+.comparison-row:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.comparison-row.featured-row {
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(0, 153, 204, 0.1) 100%);
+    border: 1px solid var(--primary-color);
+    margin: 0 -1px;
+    position: relative;
+}
+
+.comparison-row.featured-row::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, transparent, rgba(0, 212, 255, 0.1), transparent);
+    opacity: 0;
+    transition: opacity var(--animation-speed) ease;
+}
+
+.comparison-row.featured-row:hover::before {
+    opacity: 1;
+}
+
+.service-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.service-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background: var(--glass-background);
+    border-radius: 8px;
+    border: 1px solid var(--glass-border);
+}
+
+.ultraplay-icon {
+    background: var(--primary-gradient);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.service-name {
+    font-weight: 600;
+    color: white;
+    font-size: 1rem;
+}
+
+.best-choice {
+    background: var(--success-color);
+    color: var(--background-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 0.5rem;
+    animation: pulse-choice 2s infinite;
+}
+
+@keyframes pulse-choice {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 4px rgba(0, 255, 136, 0);
+    }
+}
+
+.price-info {
+    text-align: center;
+}
+
+.price-amount {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    font-family: var(--font-mono);
+}
+
+.total-price {
+    color: #ff6b6b;
+    font-size: 1.3rem;
+}
+
+.ultraplay-price {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+}
+
+.content-info,
+.quality-info,
+.devices-info {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.content-excellent {
+    color: var(--success-color);
+    font-weight: 600;
+}
+
+.quality-excellent {
+    color: var(--success-color);
+    font-weight: 600;
+}
+
+.devices-excellent {
+    color: var(--success-color);
+    font-weight: 600;
+}
+
+.quality-limited,
+.devices-limited {
+    color: #ff6b6b;
+}
+
+.quality-good,
+.devices-good {
+    color: var(--warning-color);
+}
+
+.quality-mixed,
+.devices-mixed {
+    color: var(--text-muted);
+}
+
+.savings-highlight {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.savings-card {
+    padding: 2rem;
+    text-align: center;
+    transition: all var(--animation-speed) cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.savings-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
+}
+
+.savings-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.savings-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.savings-amount {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--success-color);
+    font-family: var(--font-mono);
+    margin-bottom: 0.5rem;
+}
+
+.savings-content p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.comparison-cta {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: var(--glass-background);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius);
+}
+
+.comparison-cta h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.comparison-cta p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Plans Section */
 .plans-section {
     background: radial-gradient(ellipse at center, rgba(0, 212, 255, 0.05) 0%, transparent 70%);
@@ -1194,6 +1442,23 @@ footer {
         flex-direction: column;
         gap: 2rem;
     }
+    
+    .comparison-header,
+    .comparison-row {
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+        font-size: 0.8rem;
+    }
+    
+    .service-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 1.2rem;
+    }
+    
+    .savings-highlight {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1253,14 +1518,30 @@ footer {
         gap: 2rem;
     }
     
-    .comparison-item {
-        flex-direction: column;
-        gap: 0.25rem;
+    .comparison-table {
+        overflow-x: auto;
     }
     
-    .discount-badge-large {
-        font-size: 0.9rem;
-        padding: 0.4rem 0.8rem;
+    .comparison-header,
+    .comparison-row {
+        min-width: 600px;
+        font-size: 0.75rem;
+    }
+    
+    .service-info {
+        gap: 0.5rem;
+    }
+    
+    .best-choice {
+        display: none;
+    }
+    
+    .comparison-cta {
+        padding: 2rem 1rem;
+    }
+    
+    .comparison-cta h3 {
+        font-size: 1.5rem;
     }
 }
 
@@ -1285,6 +1566,24 @@ footer {
         margin: 10% auto;
         width: 95%;
         padding: 1.5rem;
+    }
+    
+    .comparison-header,
+    .comparison-row {
+        grid-template-columns: 1.5fr 0.8fr 1fr 0.8fr 1fr;
+        padding: 1rem 0.5rem;
+    }
+    
+    .service-name {
+        font-size: 0.8rem;
+    }
+    
+    .price-amount {
+        font-size: 1rem;
+    }
+    
+    .savings-amount {
+        font-size: 2rem;
     }
 }
 
