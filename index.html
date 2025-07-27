@@ -76,6 +76,97 @@
             </div>
         </section>
 
+        <section id="video-showcase" class="video-showcase-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2>Veja a <span class="gradient-text">qualidade</span> em ação</h2>
+                    <p class="section-subtitle">Conteúdo premium em alta definição para toda família</p>
+                </div>
+                
+                <div class="video-container animate-on-scroll">
+                    <div class="video-wrapper glass-effect">
+                        <video 
+                            id="showcaseVideo" 
+                            class="showcase-video" 
+                            poster="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=1200&h=675&fit=crop&crop=center&auto=format&q=80"
+                            preload="metadata"
+                            muted
+                        >
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                            <source src="https://sample-videos.com/zip/10/mp4/720/mp4-720.mp4" type="video/mp4">
+                            Seu navegador não suporta o elemento de vídeo.
+                        </video>
+                        
+                        <div class="video-overlay">
+                            <div class="play-button-showcase" id="playButton">
+                                <div class="play-icon">▶</div>
+                            </div>
+                            <div class="video-info">
+                                <div class="quality-badge">4K Ultra HD</div>
+                                <div class="content-type">Demonstração UltraPlay TV</div>
+                            </div>
+                        </div>
+                        
+                        <div class="video-controls" id="videoControls">
+                            <div class="controls-wrapper">
+                                <button class="control-btn" id="playPauseBtn">
+                                    <span class="play-state">▶</span>
+                                    <span class="pause-state" style="display: none;">⏸</span>
+                                </button>
+                                <div class="progress-container">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" id="progressFill"></div>
+                                        <div class="progress-handle" id="progressHandle"></div>
+                                    </div>
+                                </div>
+                                <div class="time-display">
+                                    <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+                                </div>
+                                <div class="volume-control">
+                                    <button class="control-btn" id="muteBtn">🔊</button>
+                                    <div class="volume-slider">
+                                        <input type="range" id="volumeSlider" min="0" max="100" value="70">
+                                    </div>
+                                </div>
+                                <button class="control-btn fullscreen-btn" id="fullscreenBtn">⛶</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="video-features animate-on-scroll">
+                        <div class="feature-highlight">
+                            <div class="feature-icon sports-icon">⚽</div>
+                            <div class="feature-text">
+                                <h4>Esportes ao Vivo</h4>
+                                <p>Todos os jogos em HD/4K</p>
+                            </div>
+                        </div>
+                        <div class="feature-highlight">
+                            <div class="feature-icon movies-icon">🎬</div>
+                            <div class="feature-text">
+                                <h4>Filmes & Séries</h4>
+                                <p>Catálogo sempre atualizado</p>
+                            </div>
+                        </div>
+                        <div class="feature-highlight">
+                            <div class="feature-icon news-icon">📺</div>
+                            <div class="feature-text">
+                                <h4>Canais Premium</h4>
+                                <p>+10.000 canais disponíveis</p>
+                            </div>
+                        </div>
+                        <div class="feature-highlight">
+                            <div class="feature-icon kids-icon">👶</div>
+                            <div class="feature-text">
+                                <h4>Infantil</h4>
+                                <p>Conteúdo seguro para crianças</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+  
+        
         <section id="features" class="container">
             <div class="section-header animate-on-scroll">
                 <h2>Por que escolher a <span class="gradient-text">UltraPlay TV</span>?</h2>
@@ -108,7 +199,7 @@
                 </div>
             </div>
         </section>
-
+        
         <section id="testimonials" class="testimonials-section">
             <div class="container">
                 <div class="section-header animate-on-scroll">
@@ -538,15 +629,15 @@
                     <div class="trial-badge">
                         <span class="badge-text">🎯 Oferta Especial</span>
                     </div>
-                    <h2>Experimente <span class="gradient-text">Grátis</span> por 3h</h2>
+                    <h2>Experimente <span class="gradient-text">Grátis</span> por 24h</h2>
                     <p class="trial-description">
-                        Não acredita na qualidade? Teste nosso serviço gratuitamente por 3 horas 
+                        Não acredita na qualidade? Teste nosso serviço gratuitamente por 24 horas 
                         e comprove você mesmo a diferença da UltraPlay TV!
                     </p>
                     <div class="trial-features">
                         <div class="trial-feature">
                             <div class="feature-check">✓</div>
-                            <span>Acesso completo por 3h</span>
+                            <span>Acesso completo por 24h</span>
                         </div>
                         <div class="trial-feature">
                             <div class="feature-check">✓</div>
@@ -566,7 +657,7 @@
                             <div class="trial-icon">🎁</div>
                             <div class="trial-text">
                                 <span class="trial-main">Solicitar Teste Grátis</span>
-                                <span class="trial-sub">3h de acesso completo</span>
+                                <span class="trial-sub">24h de acesso completo</span>
                             </div>
                         </div>
                         <div class="btn-trial-particles"></div>
